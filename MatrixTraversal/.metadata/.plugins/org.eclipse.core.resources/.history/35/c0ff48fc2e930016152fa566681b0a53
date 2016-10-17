@@ -1,0 +1,11 @@
+package org.gollax.matrixtraversal;
+
+public class MatrixTester {
+
+	public static void main(String[] args) {
+		int[][] values = new int[][]{{1,2},{3,4}};
+		
+		Matrix m = new Matrix(values, rowCount, columnCount)
+	}
+
+}

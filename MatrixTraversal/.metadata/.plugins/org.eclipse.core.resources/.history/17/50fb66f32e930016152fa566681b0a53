@@ -1,0 +1,10 @@
+package org.gollax.matrixtraversal;
+
+public class MatrixTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

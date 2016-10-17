@@ -1,0 +1,13 @@
+/**
+ * author : Saikrishna Gollapudi
+ */
+package org.gollax.matrixtraversal;
+public class MatrixTraversal {
+
+	public void simpleTraversal(Matrix m){
+		if(m!=null){
+			
+		}
+	}
+
+}

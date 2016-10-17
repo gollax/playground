@@ -1,0 +1,58 @@
+package org.gollax.matrixtraversal;
+
+import java.util.List;
+
+public class MatrixTester {
+
+	public static void main(String[] args) {
+		int[][] values = new int[][]{{1,2},{3,4}};
+		
+		
+		testWithSquareMatrix();
+		
+		testWithaRectangularMatrix_Column();
+		
+	}
+
+	private static void testWithaRectangularMatrix_Column() {
+		int[][] values;
+		values = new int[][]{
+				{1,2,3,4},
+				{5,6,7,8}
+				
+		};
+		//Should print 1,2,3,4,8,7,6,5
+		List<Integer>result = MatrixTraversal.traverse(new Matrix(values,2,4));
+		System.out.println(result);
+	}
+
+	private static void testWithSquareMatrix() {
+		int[][] values;
+		values = new int[][] {
+				{1,2,3},
+				{4,5,6},
+				{7,8,9}
+		};
+		//Should print 1,2,3,6,9,8,7,4,5
+		System.out.println("----------");
+		Matrix m = new Matrix(values,3,3);
+		System.out.println(MatrixTraversal.traverse(m));
+		System.out.println("----------");
+	}
+	
+	private static void testWithirregularMatrixInput() {
+		int[][] values;
+		values = new int[][] {
+				{1,2},
+				{4,5,6},
+				{7,8,9}
+		};
+		//Should print 1,2,3,6,9,8,7,4,5
+		System.out.println("----------");
+		Matrix m = new Matrix(values,3,3);
+		System.out.println(MatrixTraversal.traverse(m));
+		System.out.println("----------");
+	}
+
+
+}
