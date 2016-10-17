@@ -1,9 +1,0 @@
-package org.gollax.matrixtraversal;
-
-public class MatrixOperationException extends Exception {
-	private String message;
-	public MatrixOperationException(String message){
-		this.message  = message;
-	}
-	
-}
